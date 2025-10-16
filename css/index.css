@@ -1,0 +1,44 @@
+body {background: rgb(221, 190, 235);
+font-family: Arial, Helvetica, sans-serif;}
+header 
+{background-color: beige;
+color:blueviolet;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 20px;
+}
+nav
+{
+  position: relative;  
+}
+ul 
+{
+display:flex;
+list-style: none;
+gap: 10px;
+}
+li 
+{
+color:black;
+position: relative;
+}
+li:hover 
+{
+color:darkmagenta;
+position: relative;
+}
+.logo-titulo
+{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+footer 
+{
+background-color: beige;
+text-align: center;
+margin-top: 30px;
+padding: 1px;
+}
