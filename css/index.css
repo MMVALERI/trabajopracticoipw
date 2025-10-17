@@ -10,7 +10,7 @@ padding: 10px 20px;
 }
 nav
 {
-  position: relative;  
+  /*position: relative;*/  
 }
 ul 
 {
@@ -41,4 +41,60 @@ background-color: beige;
 text-align: center;
 margin-top: 30px;
 padding: 1px;
+}
+.dropdown
+{
+  position:relative;
+}
+.dropdown-menu
+{
+position:absolute;
+top: 100%;
+visibility: hidden;
+background-color: darkorchid;
+transform: translateY(-10px);
+min-width: 200px;
+left:0;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.dropdown-boton
+{
+
+}
+.dropdown:hover .dropdown-menu
+{
+  visibility: visible;
+  transform: translateY(0);
+}
+.lista-ppal
+{
+  display: flex;
+}
+.dropdown-menu li {
+  display: block;
+  padding: 8px 10px;
+  color: white;
+}
+
+.dropdown-menu li:hover {
+  background-color: violet;
+  color: black;
+}
+.formimput imput
+{
+border: 2px solid #ffffff;
+width: 100px;
+}
+.formulario
+{
+  display: flex;
+  flex-direction: column;
+}
+.contenedorform
+{
+  max-width: 500px;
+  background-color: #ffffff;
 }

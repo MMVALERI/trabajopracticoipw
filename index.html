@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header>
         <div class="logo-titulo">
-             <img src="img/Logo.jpg" width="80" height="80">
-       <h1>Pishis</h1>
+            <img src="img/Logo.jpg" width="80" height="80">
+            <h1>Pishis</h1>
         </div>
-       
-       <nav>
-       <ul>
-        <li>Inicio</li>
-        <li>Tipo de mascota</li>
-        <li>Productos</li>
-        <li>Servicios</li>
-        <li>Promociones</li>
-        <li>Galería</li>
-        <li>Contacto</li>
-       </ul> 
-       </nav>
+
+        <nav>
+            <ul class="lista-ppal">
+                <li>Inicio</li>
+                <li>Tipo de mascota</li>
+                <li>Productos</li>
+                <li class="dropdown">
+                    <a class="dropdown-boton">Servicios</a>
+                    <ul class="dropdown-menu">
+                        <li>Baño</li>
+                        <li>Peluquería</li>
+                        <li>Corte de uñas</li>
+                    </ul>
+                </li>
+                <li>Promociones</li>
+                <li>Galería</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
     </header>
 
-   <main>
-<img src="img/baño perro.jpg" width="500" height="300">
-<img src="img/dog eat.jpg" width="500" height="300">
-<img src="img/gato con juguete.jpg" width="500" height="300">
+    <main>
+        <img src="img/baño perro.jpg" width="500" height="300">
+        <img src="img/dog eat.jpg" width="500" height="300">
+        <img src="img/gato con juguete.jpg" width="500" height="300">
 
-   </main>
+        <div class="contenedorform">
+            <h2>Formulario</h2>
+            <form class="formulario">
+                <div class="formimput">
+                    <label for="Nombre">Nombre</label>
+                    <imput type="text" id="nombreingresado" name="nombreingresado">
+                </div>
 
-   <footer>
-    <p>&copy; 2025 - Pishi - Mesqui Desarrollo de Soft</p>
-   </footer>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea></textarea>
+                </div>
+
+                <div class="formimput">
+                    <label for="Contacto">Contacto</label>
+                    <imput type="text" id="contactoingresado" name="contactoingresado">
+                        <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Pishi - Mesqui Desarrollo</p>
+    </footer>
 
 </body>
+
 </html>
