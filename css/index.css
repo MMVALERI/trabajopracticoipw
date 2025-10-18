@@ -10,7 +10,7 @@ padding: 10px 20px;
 }
 nav
 {
-  /*position: relative;*/  
+  position: relative;  
 }
 ul 
 {
@@ -60,10 +60,10 @@ left:0;
   margin: 0;
   list-style: none;
 }
-.dropdown-boton
+/*.dropdown-boton
 {
 
-}
+}*/
 .dropdown:hover .dropdown-menu
 {
   visibility: visible;
@@ -80,7 +80,7 @@ left:0;
 }
 
 .dropdown-menu li:hover {
-  background-color: violet;
+  background-color: rgb(245, 196, 245);
   color: black;
 }
 .formimput imput
