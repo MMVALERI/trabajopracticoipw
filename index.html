@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="./js/app.js"></script>
 </head>
 
 <body>
@@ -16,77 +17,101 @@
         </div>
 
         <nav>
-            <ul class="lista-ppal">
-                <li>Inicio</li>
-                <li class="dropdown">
-                <a class="dropdown-boton">Tipo de Mascota</a>
-                <ul class="dropdown-menu">
-                        <li>Perro</li>
-                        <li>Gato</li>
-                        <li>Roedores</li>
-                        <li>Aves</li>
-                        <li>Peces</li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                <a class="dropdown-boton">Productos</a>
-                <ul class="dropdown-menu">
-                        <li>Alimentos</li>
-                        <li>Juguetes</li>
-                        <li>Higiene</li>
-                        <li>Accesorios</li>
-                        <li>Cuchas</li>
-                        <li>Golosinas</li>
-                        <li>Ropa</li>
-                        <li>Paseo</li>
-                        <li>Farmacia</li>
-                </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-boton">Servicios</a>
-                    <ul class="dropdown-menu">
-                        <li>Baño</li>
-                        <li>Peluquería</li>
-                        <li>Corte de uñas</li>
-                    </ul>
-                </li>
-                <li>Promociones</li>
-                <li>Galería</li>
-                <li>Contacto</li>
+    <ul class="lista-ppal">
+        <li><a href="#">Inicio</a></li>
+
+        <li class="dropdown">
+            <a class="dropdown-boton">Alimento Seco</a>
+            <ul class="dropdown-menu">
+                <li><a href="./pages/perro.html">Perro</a></li>
+                <li><a href="./pages/gato.html">Gato</a></li>
+                <li><a href="./pages/otros.html">Otros</a></li>
             </ul>
-        </nav>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-boton">Otros Productos</a>
+            <ul class="dropdown-menu">
+              <li><a href="./pages/juguetes.html">Juguetes</a></li>
+            <li><a href="./pages/cuchas.html">Cuchas</a></li>
+            <li><a href="./pages/ropa.html">Ropa</a></li>
+            <li><a href="./pages/paseo.html">Paseo</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-boton">Servicios</a>
+            <ul class="dropdown-menu">
+                <li><a href="./pages/baño.html">Baño</a></li>
+                <li><a href="./pages/peluqueria.html">Peluquería</a></li>
+                <li><a href="./pages/corte.html">Corte de uñas</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-boton">Higiene y Farmacia</a>
+            <ul class="dropdown-menu">
+                <li><a href="./pages/higiene.html">Productos de higiene</a></li>
+                <li><a href="./pages/remedios.html">Remedios</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+
+        <button id="modoBtn" onclick="toggleModo()">Cambiar modo</button>
     </header>
 
     <main>
-        <img src="img/baño perro.jpg" width="500" height="300">
-        <img src="img/dog eat.jpg" width="500" height="300">
-        <img src="img/gato con juguete.jpg" width="500" height="300">
+        <div class="galeria-inicio">
+        <img src="img/baño perro.jpg" width="300" height="200">
+    <img src="img/dog eat.jpg" width="300" height="200">
+    <img src="img/gato con juguete.jpg" width="300" height="200">
+    <img src="img/otros.jpg" width="300" height="200">
+    </div>
 
-        <div class="contenedorform">
-            <h2>Formulario</h2>
-            <form class="formulario">
-                <div class="formimput">
-                    <label for="Nombre">Nombre</label>
-                    <imput type="text" id="nombreingresado" name="nombreingresado">
-                </div>
+   <h2>Encontranos aquí 🐾</h2>
+   
+<div class="mapa-container">
+<iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.3277456785086!2d-58.41974252494271!3d-34.62115705841818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf89c282585%3A0x49807916b6cefaf6!2sLos%20pishis!5e0!3m2!1ses!2sar!4v1762558575444!5m2!1ses!2sar"
+  width="350"
+  height="250"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+<h2 id="contacto">Contacto 🐾</h2>
 
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea></textarea>
-                </div>
+<form id="formContacto" class="formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
 
-                <div class="formimput">
-                    <label for="Contacto">Contacto</label>
-                    <imput type="text" id="contactoingresado" name="contactoingresado">
-                        <button>Enviar</button>
-                </div>
-            </form>
-        </div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono">
+
+    <label for="mensaje">Consulta:</label>
+    <textarea id="mensaje" rows="4" required></textarea>
+
+    <button type="submit">Enviar consulta</button>
+</form>
+<script src="./js/app.js"></script>
+
+<a href="https://www.instagram.com/lospishis_tiendademascotas/" target="_blank" class="btn-instagram">
+🐾 Seguinos en Instagram
+</a>
 
     </main>
-
+       
     <footer>
-        <p>&copy; 2025 - Pishi - Mesqui Desarrollo</p>
+        <p>&copy; 2025 - Pishis - Mesqui Desarrollo</p>
     </footer>
 
 </body>
